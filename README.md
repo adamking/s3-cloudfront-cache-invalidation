@@ -1,14 +1,23 @@
 # s3-cloudfront-cache-invalidation
 An AWS Lambda function that invalidates AWS CloudFront cache when S3 objects are changed.
 
-#### Installing and building
+### Installing and building
+
 Install dependencies with `yarn install`.
 Build with `yarn build`.
 
-#### Upload
-Upload `s3-cloudfront-cache-invalidation.zip` to AWS Lambda.
+### AWS Setup
+#### Create an AWS Lambda Function
 
-#### Example AWS IAM Policy
+![Create Screenshot](https://github.com/adamking/s3-cloudfront-cache-invalidation/raw/master/screenshots/create.png)
+
+#### Upload `s3-cloudfront-cache-invalidation.zip` to AWS Lambda
+
+![Upload Screenshot](https://github.com/adamking/s3-cloudfront-cache-invalidation/raw/master/screenshots/upload.png)
+
+#### Create policy
+![Policy Screenshot](https://github.com/adamking/s3-cloudfront-cache-invalidation/raw/master/screenshots/role-policy.png)
+
 ``` json
 {
     "Version": "2012-10-17",
@@ -53,3 +62,5 @@ Upload `s3-cloudfront-cache-invalidation.zip` to AWS Lambda.
     ]
 }
 ```
+
+#### Add trigger to S3 bucket
