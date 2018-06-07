@@ -1,0 +1,15 @@
+{
+  "name": "s3-cloudfront-cache-invalidation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "zip -r s3-cloudfront-cache-invalidation ."
+  },
+  "author": "Adam King",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.252.1",
+    "q": "^1.5.1"
+  }
+}
